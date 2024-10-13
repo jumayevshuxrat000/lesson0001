@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="./features-section.css">
     <link rel="stylesheet" href="./resent-section.css">
     <link rel="stylesheet" href="./stay-in-touch.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="contianer">
             <nav class="navbar">
-                <div class="nav__logo">
+                <div data-aos="zoom-in" class="nav__logo">
                     <h1>Escape</h1>
                 </div>
-                <ul class="nav__collection">
+                <ul data-aos="zoom-in" class="nav__collection">
                     <li class="nav__links"><a class="nav__items" href=""><span>Home</span></a></li>
                     <li class="nav__links"><a class="nav__items" href=""><span>About Us</span></a></li>
                     <li class="nav__links"><a class="nav__items" href=""><span>Catigries</span></a></li>
@@ -43,7 +44,7 @@
         </section>
         <section class="catigories">
             <div class="contianer">
-                <ul class="catigories__collection">
+                <ul class="catigories__collection" data-aos="zoom-in">
                     <li class="catigoris__links"><a class="catigories__items" href="">Nature    </a></li>
                     <li class="catigoris__links"><a class="catigories__items" href="">Photography   </a></li>
                     <li class="catigoris__links"><a class="catigories__items" href="">Relexion  </a></li>
@@ -53,12 +54,12 @@
                 </ul>
             </div>
         </section>
-        <section class="featured__section">
+        <section class="featured__section" data-aos="flip-up">
             <div class="contianer">
                 <div class="section__header__text">
                     <h2>Featured Posts</h2>
                 </div>
-                <div class="featured__cards">
+                <div class="featured__cards" data-aos="zoom-in">
                     <div class="card">
                         <img src="./assets/IMAGE.png" alt="The Road Ahead" class="card-img">
                       
@@ -99,7 +100,7 @@
                 <div class="recent-section-head-text">
                     <h2>Most Recent</h2>
                 </div>
-                <div class="resent-cards">
+                <div class="resent-cards" data-aos="zoom-in-left">
                     <div class="simple-card">
                         <img src="./assets/Frame3.png" alt="Hot Air Balloons" class="simple-card-img">
                       
@@ -148,7 +149,7 @@
                           </div>
                         </div>
                       </div>
-                    <div class="simple-card">
+                    <div class="simple-card" data-aos="zoom-in">
                         <img src="./assets/Frame7.png" alt="Hot Air Balloons" class="simple-card-img">
                       
                         <div class="simple-card-body">
@@ -202,7 +203,7 @@
 <section class="stay-in-touch">
     <div class="stay-in-touch-content">
       <h2>Stay in Touch</h2>
-      <form class="subscribe-form">
+      <form class="subscribe-form" data-aos="fade-down-right">
         <input class="inpot" type="email" placeholder="Enter your email address" required>
         <button type="submit">Submit</button>
       </form>
@@ -223,6 +224,10 @@
   </footer>
   
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
     
