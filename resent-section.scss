@@ -1,0 +1,75 @@
+.resent__section{
+    margin-top: 80px;
+}
+
+.resent-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.recent-section-head-text{
+    text-align: center;
+    padding: 40px 50px;
+    h2{
+        font-size: 32px;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+
+.simple-card {
+    height: 291px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 20px; /* Har bir karta o'rtasida masofa */
+    .simple-card-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover; /* Rasmni card o'lchamiga moslashtirish */
+      }
+      .simple-card-body {
+        padding: 15px;
+        .simple-card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          .simple-card-subtitle {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+          }
+      }
+      .simple-card-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .simple-author {
+            display: flex;
+            align-items: center;
+            .simple-author img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 8px;
+              }
+              .simple-author span {
+                font-size: 14px;
+                color: #555;
+              }
+              .simple-date {
+                font-size: 14px;
+                color: #555;
+              }
+          }
+      }
+  }
+
+  @media (max-width: 780px) {
+    .resent-cards{
+        grid-template-columns: repeat(1, 1fr);  
+    }
+  }

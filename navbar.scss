@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    padding: 20px 0;
+    .nav__logo{
+        flex: 1;
+        font-size: 26px;
+    }
+    .nav__collection{
+        display: flex;
+        gap: 50px;
+        .nav__links{
+            color: black;
+            .nav__items{
+                text-decoration: none;
+                color: black;
+                span{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            .nav__menu{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .nav__items{
+        display: none;
+    }
+}

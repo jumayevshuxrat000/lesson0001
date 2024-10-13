@@ -1,1 +1,32 @@
-/*# sourceMappingURL=navbar.css.map */
+.navbar {
+  display: flex;
+  padding: 20px 0;
+}
+.navbar .nav__logo {
+  flex: 1;
+  font-size: 26px;
+}
+.navbar .nav__collection {
+  display: flex;
+  gap: 50px;
+}
+.navbar .nav__collection .nav__links {
+  color: black;
+}
+.navbar .nav__collection .nav__links .nav__items {
+  text-decoration: none;
+  color: black;
+}
+.navbar .nav__collection .nav__links .nav__items span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.navbar .nav__collection .nav__links .nav__menu {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .nav__items {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

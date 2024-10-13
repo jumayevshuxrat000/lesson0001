@@ -1,0 +1,67 @@
+.featured__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.section__header__text{
+    text-align: center;
+    padding: 40px;
+    h2{
+        font-size: 32px;
+    }
+}
+
+.card {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 4px;
+    .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Rasmni cardning butun kengligi va bo'yi bo'yicha moslashtirish */
+      }
+      .card-content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        z-index: 2;
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          .card-subtitle {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+      }
+      .card-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .author {
+            display: flex;
+            align-items: center;
+            .author img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 8px;
+              }
+              .author span {
+                font-size: 14px;
+              }
+              .date {
+                font-size: 14px;
+              }
+          }
+      }
+  }
+@media (max-width: 780px) {
+    .featured__cards{
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
